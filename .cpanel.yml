@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/nrbright/public_html/data
-    - /bin/cp * $DEPLOYPATH

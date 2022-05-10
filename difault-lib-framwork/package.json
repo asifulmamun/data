@@ -1,0 +1,46 @@
+{
+  "name": "febcv",
+  "version": "1.0.0",
+  "description": "This is the curriculum vitae lite version for use personal",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asifulmamun/febcv.git"
+  },
+  "keywords": [
+    "febcv",
+    "february",
+    "cv",
+    "lite",
+    "cv",
+    "template",
+    "cv"
+  ],
+  "author": "Al Mamun - asifulmamun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asifulmamun/febcv/issues"
+  },
+  "homepage": "https://github.com/asifulmamun/febcv#readme",
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.7",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.46.0"
+  },
+  "dependencies": {
+    "call-bind": "^1.0.2",
+    "get-intrinsic": "^1.1.1",
+    "glob": "^7.2.0",
+    "has-symbols": "^1.0.2",
+    "is-core-module": "^2.8.1",
+    "object.assign": "^4.1.2",
+    "resolve": "^1.21.0",
+    "supports-preserve-symlinks-flag": "^1.0.0"
+  }
+}

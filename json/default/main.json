@@ -1,10 +1,27 @@
 {
-    "Comapnay":{
+    "Comapnay": {
         "CompanyName": "Tawakkul IT Solution",
         "CompanyWebUrl": "https://its.tawakkulshop.com",
         "CompanyFb": "https://facebook.com/its.tws",
         "CompanyEmail": "tawakkulits@gmail.com",
         "CompanyPhone": "+8801600103032",
-        "CEO": "Name"
+        "CEO": {
+            "Name": "Al Mamun",
+            "UserName": "asifulmamun",
+            "FullName": "Asiful Haque Al Mamun",
+            "Designation": "CEO",
+            "Cell": "+8801721600688",
+            "Email": "hello@asifulmamun.info",
+            "Web": "asifulmamun.info",
+            "Website": "https://linkedin.com/in/asifulmamun",
+            "WebUrl": "https://asifulmamun.info",
+            "LinkEdin": "https://asifulmamun.info",
+            "FacebookPage": "https://facebook.com/asifulmamun.info",
+            "FacebookProfile": "https://facebook.com/asifulmamun",
+            "Twitter": "https://twitter.com/asifulmamun",
+            "AboutProfile": "https://about.me/asifulmamun",
+            "Fiverr": "https://fiverr.com/asifulmamun",
+            "Upwork": "https://www.upwork.com/freelancers/~0129882d627383c362"
+        }
     }
 }

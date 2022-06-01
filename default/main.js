@@ -19,7 +19,7 @@ var getJSON = function (url, callback) {
 };
 
 // Developer
-getJSON('./main.json', function (err, developer) {
+getJSON('./default/main.json', function (err, developer) {
     // If json data found
     if (err != null) {
         console.error(err);
@@ -29,3 +29,16 @@ getJSON('./main.json', function (err, developer) {
 
     }
 });
+
+// Create Element
+function developer(){
+    let developerDiv = document.createElement('div');
+    developerDiv.setAttribute('id', 'developer');
+    document.body.appendChild(developerDiv);
+
+
+    let developer = document.getElementById('developer');
+
+    developer.innerHTML = '<small>asifulmamun.info</small>';
+}
+developer();

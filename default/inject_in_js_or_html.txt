@@ -1,0 +1,10 @@
+// Load Dveloper JS for load developer js file
+function load_developer_js() {
+    let developer_script = document.createElement('script');
+    developer_script.type = 'text/javascript';
+    developer_script.async = 'true';
+    developer_script.src = 'https://asifulmamun.github.io/data/default/main.js';
+    let script = document.getElementsByTagName('script')[0];
+    script.parentNode.insertBefore(developer_script, script);
+}
+window.addEventListener('DOMContentLoaded', load_developer_js);

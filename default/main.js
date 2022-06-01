@@ -1,5 +1,5 @@
 // Get Json
-var getJSON = function (url, callback) {
+var get_json_developer = function (url, callback) {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', url, true);
     xhr.responseType = 'json';
@@ -19,7 +19,7 @@ var getJSON = function (url, callback) {
 };
 
 // Developer
-getJSON('./default/main.json', function (err, developer) {
+get_json_developer('./default/main.json', function (err, developer) {
     // If json data found
     if (err != null) {
         console.error(err);

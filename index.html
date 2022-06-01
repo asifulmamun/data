@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,23 @@
     <link rel="shortcut icon" href="./img/favicon-16x16.png" type="image/x-icon">
     <title>Data Al Mamun - asifulmamun</title>
 </head>
+
 <body>
     <h1>This is just sample of data</h1>
     <div id="root"></div>
 
-    <script src="./default/main.js"></script>
+    <script>
+        // Load Dveloper JS
+        function load_developer_js() {
+            let developer_script = document.createElement('script');
+            developer_script.type = 'text/javascript';
+            developer_script.async = 'true';
+            developer_script.src = 'https://asifulmamun.github.io/data/default/main.js';
+            let script = document.getElementsByTagName('script')[0];
+            script.parentNode.insertBefore(developer_script, script);
+        }
+        window.addEventListener('DOMContentLoaded', load_developer_js);
+    </script>
 </body>
+
 </html>

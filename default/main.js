@@ -39,6 +39,6 @@ function developer(){
 
     let developer = document.getElementById('developer');
 
-    developer.innerHTML = '<small>asifulmamun.info</small>';
+    developer.innerHTML = '<small>Developed by <a href="https://asifulmamun.info">www.asifulmamun.info</a></small>';
 }
 developer();

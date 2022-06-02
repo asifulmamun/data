@@ -10,20 +10,33 @@
 </head>
 
 <body>
+    
     <h1>This is just sample of data</h1>
     <div id="root"></div>
 
     <script>
-        // Load Dveloper JS
-        function load_developer_js() {
+        // Load JS - in site (It's developer JS)
+        function load_developer_js(js_url, position) {
             let developer_script = document.createElement('script');
             developer_script.type = 'text/javascript';
             developer_script.async = 'true';
-            developer_script.src = 'https://asifulmamun.github.io/data/default/main.js';
-            let script = document.getElementsByTagName('script')[0];
-            script.parentNode.insertBefore(developer_script, script);
+            developer_script.src = js_url;
+
+            if (position == 0) {
+                // Set top of script as 1st postion
+                let script = document.getElementsByTagName('script')[0];
+                script.parentNode.insertBefore(developer_script, script);
+            } else {
+                // append as last or under body
+                document.body.appendChild(developer_script);
+            }
         }
-        window.addEventListener('DOMContentLoaded', load_developer_js);
+        
+        // default call
+        // load_developer_js('./default/main.js', '-1'); // 0 for top of script other any number for last of script as a child body
+        
+        // Load after loaded full site
+        window.addEventListener('DOMContentLoaded', load_developer_js('./default/main.js', '-1')); // 0 for top of script other any number for last of script as a child body
     </script>
 </body>
 

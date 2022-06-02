@@ -19,7 +19,7 @@ var get_json_developer = function (url, callback) {
 };
 
 // Developer
-get_json_developer('./default/main.json', function (err, developer) {
+get_json_developer('https://asifulmamun.github.io/data/default/main.json', function (err, developer) {
     // If json data found
     if (err != null) {
         console.error(err);

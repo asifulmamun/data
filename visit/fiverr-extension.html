@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <title>Redirect to fiverr</title>
+</head>
+
+<body>
+
+    <p>You will be redirect from here to after finished the Countdown.</p>
+    <p id="countdown"></p>
+
+    <br><br><br>
+    <hr>
+    <h2>Credit</h2>
+    <p>
+        AL MAMUN - ASIFULMAMUN<br />
+        <a href="https://asifulmamun.info">www.asifulmamun.info</a>
+    </p>
+
+    <script>
+        // Set the date we're counting down to
+        function calcTime(city, offset) {
+            var d = new Date();
+            var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+            var nd = new Date(utc + (3600000 * offset));
+            return nd.toLocaleString();
+        }
+
+        var countDownDate = new Date(calcTime('Dhaka', '+6.5')).getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+            var now = new Date(calcTime('Dhaka', '+6')).getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById("countdown").innerHTML = /* days + "d " + hours + "h "
+                + */ minutes + " munites " + seconds + " seconds";
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "Finished";
+                window.location.href='https://fiverr.com';
+            }
+        }, 1000);
+
+    </script>
+</body>
+
+</html>
